@@ -31,7 +31,7 @@
   --radius-sm: 8px;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --paper: #14171f;
     --paper-raised: #1b1f2a;
@@ -43,4 +43,4 @@
     --accent-coral-soft: #3a2620;
     --accent-moss-soft: #1f3327;
   }
-}
+} */
