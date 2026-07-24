@@ -50,3 +50,45 @@
   color: var(--ink-soft);
   max-width: 20ch;
 }
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+  align-items: center;
+}
+
+.tab {
+  --accent: var(--ink);
+
+  appearance: none;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink-soft);
+
+  padding: .65rem 1rem;
+  border-radius: 999px;
+
+  font-family: var(--font-body);
+  font-size: .92rem;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background .18s ease,
+    color .18s ease,
+    border-color .18s ease;
+}
+
+.tab:hover {
+  background: rgba(0,0,0,.03);
+  color: var(--ink);
+}
+
+.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+

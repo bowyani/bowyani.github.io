@@ -6,10 +6,10 @@ export function Hero() {
     <section className={styles.hero}>
       <div className={`container ${styles.inner}`}>
         <div className={styles.text}>
-          <p className="eyebrow">Welcome to my showcase :)</p>
-          <h1 className={styles.title}>
-            <span className={styles.name}>I'm {profile.name.split(' ')[0]}</span>
-          </h1>
+          <p className="eyebrow">I'm {profile.name.split(' ')[0]}</p>
+{/*           <h1 className={styles.title}>
+            <span className={styles.name}>Welcome to my showcase :)</span>
+          </h1> */}
           <p className={styles.bio}>{profile.bio}</p>
           <div className={styles.actions}>
             <a className={styles.primaryBtn} href={profile.resumeUrl} download>

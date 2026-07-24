@@ -13,8 +13,8 @@ export function Home() {
     <>
       <Hero />
       <section id="work" className={`container ${styles.work}`}>
-        <p className="eyebrow">ผลงาน</p>
-        <h2 className={styles.heading}>เลือกดูตามสายงาน</h2>
+{/*         <p className="eyebrow">ผลงาน</p>
+        <h2 className={styles.heading}>เลือกดูตามสายงาน</h2> */}
         <DisciplineTabs active={filter} onChange={setFilter} />
         <ProjectGrid projects={projects} filter={filter} />
       </section>

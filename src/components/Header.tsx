@@ -9,7 +9,7 @@ export function Header() {
           {profile.name}
         </a>
         <nav className={styles.nav}>
-          <a href="#work">ผลงาน</a>
+          <a href="#work">project</a>
           <a href={profile.resumeUrl} download>
             Resume
           </a>

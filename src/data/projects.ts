@@ -66,7 +66,7 @@ export const projects: Project[] = [
     discipline: 'coding',
     title: 'Web service design for travel agency',
     description: 'Using HTML, CSS, JavaScript with API Google Map Deployed on Render cloud',
-    image: '/projects/coding_phuket.jpg',
+    image: '/projects/coding_phuket.png',
     link: ' https://love-phuket-website.onrender.com/',
     tags: ['Web App'],
     date: 'May 2024',
