@@ -1,4 +1,4 @@
-export type Discipline = 'coding' | 'research' | 'ui';
+export type Discipline = 'product' | 'coding' | 'research' | 'ui';
 
 export interface DisciplineMeta {
   id: Discipline;
@@ -15,6 +15,7 @@ export interface Project {
   image?: string;
   link?: string;
   tags: string[];
+  date?: string;
 }
 
 export interface SocialLink {

@@ -17,6 +17,9 @@ export function ProjectCard({ project }: { project: Project }) {
         </span>
         <h3 className={styles.title}>{project.title}</h3>
         <p className={styles.desc}>{project.description}</p>
+        {project.date && (
+          <p className={styles.date}>{project.date}</p>
+        )}
         {project.tags.length > 0 && (
           <ul className={styles.tags}>
             {project.tags.map((t) => (
