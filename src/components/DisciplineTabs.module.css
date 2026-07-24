@@ -1,0 +1,52 @@
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  align-items: flex-start;
+}
+
+.card {
+  --accent: var(--ink-faint);
+  position: relative;
+  transform: rotate(var(--rot, 0deg));
+  background: var(--paper-raised);
+  border: 1.5px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: 4px 10px 10px 4px;
+  padding: 0.85rem 1.1rem;
+  min-width: 140px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  box-shadow: 0 3px 0 rgba(28, 34, 48, 0.05);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.card:hover {
+  transform: rotate(0deg) translateY(-3px);
+  box-shadow: 0 8px 16px rgba(28, 34, 48, 0.1);
+}
+
+.activeCard {
+  transform: rotate(0deg) translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 20px rgba(28, 34, 48, 0.12);
+}
+
+.all {
+  border-left-color: var(--ink);
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.tagline {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  max-width: 20ch;
+}

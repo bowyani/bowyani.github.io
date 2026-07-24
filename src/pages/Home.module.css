@@ -1,0 +1,8 @@
+.work {
+  padding: clamp(3rem, 6vw, 5rem) 0;
+}
+
+.heading {
+  font-size: var(--fs-h2);
+  margin-bottom: 1.5rem;
+}

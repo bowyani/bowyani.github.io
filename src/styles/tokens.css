@@ -1,0 +1,46 @@
+:root {
+  /* --- Color --- */
+  --paper: #f4f5ef;       /* cool off-white, not warm cream */
+  --paper-raised: #ffffff;
+  --ink: #1c2230;         /* deep navy-black, primary text */
+  --ink-soft: #565f74;    /* secondary text */
+  --ink-faint: #9098a8;
+  --line: #dcdecd;        /* hairline borders */
+  --accent-violet: #5b4fe0;   /* signature accent — code / structure */
+  --accent-violet-soft: #ece9fb;
+  --accent-coral: #e8623d;    /* rare use — CTA / emphasis only */
+  --accent-coral-soft: #fbe7e0;
+  --accent-moss: #4c7a5e;     /* rare use — UX/research tag */
+  --accent-moss-soft: #e3ede6;
+
+  /* --- Type --- */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --fs-hero: clamp(2.6rem, 6vw, 5rem);
+  --fs-h2: clamp(1.8rem, 3.4vw, 2.6rem);
+  --fs-h3: clamp(1.2rem, 2vw, 1.5rem);
+  --fs-body: 1.05rem;
+  --fs-small: 0.85rem;
+
+  /* --- Layout --- */
+  --maxw: 1180px;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --radius: 14px;
+  --radius-sm: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #14171f;
+    --paper-raised: #1b1f2a;
+    --ink: #eef0f2;
+    --ink-soft: #aab0bf;
+    --ink-faint: #6b7280;
+    --line: #2a2f3d;
+    --accent-violet-soft: #262254;
+    --accent-coral-soft: #3a2620;
+    --accent-moss-soft: #1f3327;
+  }
+}
