@@ -1,6 +1,5 @@
 .hero {
-  padding: clamp(3rem, 8vw, 6rem) 0 clamp(2rem, 5vw, 3.5rem);
-  border-bottom: 1px solid var(--line);
+  padding: clamp(3rem, 3vw, 6rem) 0 clamp(2rem, 3vw, 3.5rem);
 }
 
 .inner {

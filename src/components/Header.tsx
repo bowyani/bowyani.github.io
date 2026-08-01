@@ -1,5 +1,5 @@
-import { profile } from '@/data/profile';
-import styles from './Header.module.css';
+import { profile } from "@/data/profile";
+import styles from "./Header.module.css";
 
 export function Header() {
   return (
@@ -13,6 +13,13 @@ export function Header() {
           <a href={profile.resumeUrl} download>
             Resume
           </a>
+          <div className={styles.links}>
+            {profile.socials.map((s) => (
+              <a key={s.label} href={s.url} target="_blank" rel="noreferrer">
+                {s.label}
+              </a>
+            ))}
+          </div>
         </nav>
       </div>
     </header>
