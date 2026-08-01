@@ -11,7 +11,7 @@ export function Hero() {
             <span className={styles.name}>Welcome to my showcase :)</span>
           </h1> */}
           <p className={styles.bio}>{profile.bio}</p>
-          <div className={styles.actions}>
+{/*           <div className={styles.actions}>
             <a className={styles.primaryBtn} href={profile.resumeUrl} download>
               Download Resume
             </a>
@@ -20,7 +20,7 @@ export function Hero() {
                 {s.label}
               </a>
             ))}
-          </div>
+          </div> */}
         </div>
         {/* <div className={styles.avatarWrap}>
           <img src={profile.avatar} alt={profile.name} className={styles.avatar} />
