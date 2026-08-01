@@ -9,17 +9,14 @@ export function Header() {
           {profile.name}
         </a>
         <nav className={styles.nav}>
-          {/* <a href="#work">project</a> */}
           <a href={profile.resumeUrl} download>
             Resume
           </a>
-          <div className={styles.links}>
-            {profile.socials.map((s) => (
-              <a key={s.label} href={s.url} target="_blank" rel="noreferrer">
-                {s.label}
-              </a>
-            ))}
-          </div>
+          {profile.socials.map((s) => (
+            <a key={s.label} href={s.url} target="_blank" rel="noreferrer">
+              {s.label}
+            </a>
+          ))}
         </nav>
       </div>
     </header>
