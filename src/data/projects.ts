@@ -6,7 +6,7 @@ export const projects: Project[] = [
     discipline: 'product',
     title: 'Preventive Maintenance Platform',
     description: 'Preventive Maintenance Platform',
-    image: '/projects/placeholder.png',
+    image: '/projects/product_PM.png',
     link: 'https://github.com/bowyani/preventive-maintenance',
     tags: ['Product Builder', 'AI tool', 'As-Is Analysis', 'To-Be Analysis', 'BRD', 'ERD', 'User story', 'FRS'],
     date: 'Jul 2026 (Ongoing)',
