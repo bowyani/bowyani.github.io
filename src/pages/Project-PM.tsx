@@ -35,14 +35,6 @@ export function ProjectPM() {
             <small>Coming soon</small>
           </a>
         </div>
-
-        <ul className={styles.tags}>
-          <li>Product Design</li>
-          <li>Business Analysis</li>
-          <li>BPMN</li>
-          <li>ER Diagram</li>
-          <li>API</li>
-        </ul>
       </div>
     </article>
   );
