@@ -25,14 +25,13 @@ export function ProjectPM() {
           </a>
 
           <a
-            className={`${styles.link} ${styles.disabled}`}
-            href="#"
-            onClick={(e) => e.preventDefault()}
-            aria-disabled="true"
+            className={styles.link}
+            href="https://prototype-pm.onrender.com"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <span>↗</span>
             Prototype
-            <small>Coming soon</small>
           </a>
         </div>
       </div>
