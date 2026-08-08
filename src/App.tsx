@@ -1,11 +1,15 @@
-import { MainLayout } from '@/layouts/MainLayout';
-import { Home } from '@/pages/Home';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "@/pages/Home";
+import { ProjectPM } from "@/pages/Project-PM";
 
 function App() {
   return (
-    <MainLayout>
-      <Home />
-    </MainLayout>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/pm" element={<ProjectPM />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
