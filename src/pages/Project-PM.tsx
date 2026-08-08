@@ -1,23 +1,49 @@
+import styles from "./ProjectPM.module.css";
+
 export function ProjectPM() {
   return (
-    <>
-      <p className="eyebrow">Project preventive-maintenance</p>
-      <p>
-        Link:{" "}
-        <a
-          href="https://github.com/bowyani/preventive-maintenance"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Docs
-        </a>
-      </p>
-      <p>
-        Link:{" "}
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          Prototype
-        </a>
-      </p>
-    </>
+    <article className={styles.card}>
+      <div className={styles.body}>
+        <span className={styles.tag}>PROJECT · PREVENTIVE MAINTENANCE</span>
+
+        <h3 className={styles.title}>Preventive Maintenance</h3>
+
+        <p className={styles.description}>
+          ระบบสำหรับวางแผน ติดตาม และจัดการงาน Preventive Maintenance
+          เพื่อช่วยลด downtime และทำให้การบำรุงรักษาเป็นระบบมากขึ้น
+        </p>
+
+        <div className={styles.links}>
+          <a
+            className={styles.link}
+            href="https://github.com/bowyani/preventive-maintenance"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>↗</span>
+            Documentation
+          </a>
+
+          <a
+            className={`${styles.link} ${styles.disabled}`}
+            href="#"
+            onClick={(e) => e.preventDefault()}
+            aria-disabled="true"
+          >
+            <span>↗</span>
+            Prototype
+            <small>Coming soon</small>
+          </a>
+        </div>
+
+        <ul className={styles.tags}>
+          <li>Product Design</li>
+          <li>Business Analysis</li>
+          <li>BPMN</li>
+          <li>ER Diagram</li>
+          <li>API</li>
+        </ul>
+      </div>
+    </article>
   );
 }

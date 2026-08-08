@@ -1,0 +1,119 @@
+.card {
+    display: block;
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        border-color 180ms ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(28, 34, 48, 0.1);
+    border-color: var(--accent-violet);
+}
+
+.body {
+    padding: 1.4rem 1.5rem 1.5rem;
+}
+
+.tag {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent-violet);
+    margin-bottom: 0.65rem;
+}
+
+.title {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem;
+}
+
+.description {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    margin: 0 0 1.25rem;
+    max-width: 680px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1.25rem;
+}
+
+.link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+
+    color: var(--ink);
+    text-decoration: none;
+
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.4rem 0.75rem;
+
+    transition:
+        color 160ms ease,
+        border-color 160ms ease,
+        background 160ms ease;
+}
+
+.link:hover {
+    color: var(--accent-violet);
+    border-color: var(--accent-violet);
+    background: var(--accent-violet-soft);
+}
+
+.link span {
+    font-size: 0.9rem;
+}
+
+.link small {
+    color: var(--ink-faint);
+    font-size: 0.65rem;
+}
+
+.disabled {
+    color: var(--ink-faint);
+    cursor: default;
+}
+
+.disabled:hover {
+    color: var(--ink-faint);
+    border-color: var(--line);
+    background: transparent;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tags li {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--ink-soft);
+
+    border: 1px solid var(--line);
+    border-radius: 999px;
+
+    padding: 0.15rem 0.6rem;
+}
