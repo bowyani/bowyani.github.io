@@ -4,6 +4,14 @@ export function ProjectPM() {
   return (
     <section id="work" className={`container ${styles.work}`}>
       <article className={styles.card}>
+        {/* ส่วนพรีวิวรูปภาพ Viewport */}
+        <div className={styles.previewContainer}>
+          <img
+            src="/projects/product_PM.png"
+            alt="Preventive Maintenance Prototype Preview"
+            className={styles.previewImg}
+          />
+        </div>
         <div className={styles.body}>
           <span className={styles.tag}>PROJECT · PREVENTIVE MAINTENANCE</span>
 
