@@ -2,7 +2,8 @@
   padding: clamp(2rem, 5vw, 4rem) 0;
 }
 .card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   background: var(--paper-raised);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -19,8 +20,50 @@
   border-color: var(--accent-yellow-dark);
 }
 
+/* Preview Image Area */
+.previewContainer {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  overflow: hidden;
+  background: var(--navy-primary);
+  border-bottom: 1px solid var(--line);
+}
+
+.previewImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 300ms ease;
+}
+
+/* Hover Overlay เอฟเฟกต์รูปพรีวิว */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 17, 40, 0.65);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+.previewContainer:hover .overlay {
+  opacity: 1;
+}
+
+.previewContainer:hover .previewImg {
+  transform: scale(1.03);
+}
+
 .body {
-  padding: 1.6rem;
+  padding: 1.5rem 1.6rem;
 }
 
 .tag {
@@ -55,23 +98,18 @@
   align-items: center;
 }
 
-/* Secondary Link (Documentation) */
 .link {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-
   font-family: var(--font-mono);
   font-size: 0.8rem;
   font-weight: 500;
-
   color: var(--ink);
   text-decoration: none;
-
   border: 1px solid var(--line);
   border-radius: 999px;
   padding: 0.45rem 0.9rem;
-
   transition:
     color 160ms ease,
     border-color 160ms ease,
@@ -84,7 +122,6 @@
   background: var(--accent-violet-soft);
 }
 
-/* Primary Link (Prototype - เด่นกว่า) */
 .primaryLink {
   background: var(--accent-yellow);
   border-color: var(--accent-yellow);
@@ -93,7 +130,7 @@
 }
 
 .primaryLink:hover {
-  background: #eab308; /* เหลืองเข้มขึ้นเล็กน้อย */
+  background: #eab308;
   border-color: #eab308;
   color: var(--ink);
 }
@@ -104,5 +141,5 @@
 }
 
 .link:hover .linkIcon {
-  transform: translate(2px, -2px); /* เอฟเฟกต์ลูกศรขยับเมื่อ Hover */
+  transform: translate(2px, -2px);
 }
