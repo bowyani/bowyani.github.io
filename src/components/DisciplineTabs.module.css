@@ -20,7 +20,10 @@
   flex-direction: column;
   gap: 0.15rem;
   box-shadow: 0 3px 0 rgba(28, 34, 48, 0.05);
-  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
 }
 
 .card:hover {
@@ -52,37 +55,48 @@
 }
 
 .tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .65rem;
+  gap: 0.65rem;
   align-items: center;
+  padding-bottom: 0.25rem;
+  /* เผื่อพื้นที่ให้ Scrollbar บนมือถือ */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ซ่อน Scrollbar เพื่อความสะอาดตา */
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs {
+  scrollbar-width: none;
 }
 
 .tab {
   --accent: var(--ink);
-
   appearance: none;
   border: 1px solid var(--line);
   background: transparent;
   color: var(--ink-soft);
-
-  padding: .65rem 1rem;
+  padding: 0.65rem 1rem;
+  margin-bottom: 0.5rem;
   border-radius: 999px;
-
   font-family: var(--font-body);
-  font-size: .92rem;
+  font-size: 0.92rem;
   font-weight: 500;
-
   cursor: pointer;
-
   transition:
-    background .18s ease,
-    color .18s ease,
-    border-color .18s ease;
+    background 0.18s ease,
+    color 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.tab {
+  flex-shrink: 0;
+  /* ป้องกันปุ่มหดตัวเวลาซ้อนกันในแถวเดียว */
 }
 
 .tab:hover {
-  background: rgba(0,0,0,.03);
+  background: rgba(0, 0, 0, 0.03);
   color: var(--ink);
 }
 
@@ -92,3 +106,18 @@
   color: white;
 }
 
+@media (max-width: 868px) {
+  .tabs {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+    /* บนมือถือให้ไถข้างได้ ไม่แตกเป็นหลายบรรทัด */
+    overflow-x: auto;
+    /* สไลด์แนวนอนได้บนหน้าจอแคบ */
+  }
+
+  .tab {
+    padding: 0.55rem 0.85rem;
+    font-size: 0.88rem;
+  }
+}

@@ -14,24 +14,32 @@ export function ProjectPM() {
         </p>
 
         <div className={styles.links}>
+          {/* Primary Action */}
+          <a
+            className={`${styles.link} ${styles.primaryLink}`}
+            href="https://prototype-pm.onrender.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Prototype (opens in new tab)"
+          >
+            Prototype
+            <span className={styles.linkIcon} aria-hidden="true">
+              ↗
+            </span>
+          </a>
+
+          {/* Secondary Action */}
           <a
             className={styles.link}
             href="https://github.com/bowyani/preventive-maintenance"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="View Documentation on GitHub (opens in new tab)"
           >
-            <span>↗</span>
             Documentation
-          </a>
-
-          <a
-            className={styles.link}
-            href="https://prototype-pm.onrender.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>↗</span>
-            Prototype
+            <span className={styles.linkIcon} aria-hidden="true">
+              ↗
+            </span>
           </a>
         </div>
       </div>

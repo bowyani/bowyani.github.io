@@ -1,11 +1,12 @@
 .hero {
   padding: clamp(3rem, 3vw, 6rem) 0 clamp(2rem, 3vw, 3.5rem);
+  background-color: var(--accent-violet);
 }
 
 .inner {
   display: grid;
-  grid-template-columns: 1.4fr 0.8fr;
-  gap: clamp(2rem, 5vw, 4rem);
+/*   grid-template-columns: 1.4fr 0.8fr;
+ */  gap: clamp(2rem, 5vw, 4rem);
   align-items: center;
 }
 
@@ -25,7 +26,7 @@
 }
 
 .name {
-  color: var(--accent-violet);
+  color: var(--paper);
   font-style: italic;
 }
 

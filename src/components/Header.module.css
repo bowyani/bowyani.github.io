@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  background: color-mix(in srgb, var(--accent-violet) 88%, transparent);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
 }
@@ -29,10 +29,10 @@
 }
 
 .nav a {
-  color: var(--ink-soft);
+  color: var(--paper);
   transition: color 150ms ease;
 }
 
 .nav a:hover {
-  color: var(--accent-violet);
+  color: var(--accent-violet-soft);
 }

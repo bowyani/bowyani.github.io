@@ -6,10 +6,10 @@
   --ink-soft: #565f74;    /* secondary text */
   --ink-faint: #9098a8;
   --line: #dcdecd;        /* hairline borders */
-  --accent-violet: #5b4fe0;   /* signature accent — code / structure */
-  --accent-violet-soft: #ece9fb;
-  --accent-coral: #e8623d;    /* rare use — CTA / emphasis only */
-  --accent-coral-soft: #fbe7e0;
+  --accent-violet: #09399a;   /* signature accent — code / structure */
+  --accent-violet-soft: #bcd0f7;
+  --accent-coral: #e8ac3d;    /* rare use — CTA / emphasis only */
+  --accent-coral-soft: #faeed8;
   --accent-moss: #4c7a5e;     /* rare use — UX/research tag */
   --accent-moss-soft: #e3ede6;
 

@@ -1,119 +1,105 @@
 .card {
-    display: block;
-    background: var(--paper-raised);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    overflow: hidden;
-    transition:
-        transform 180ms ease,
-        box-shadow 180ms ease,
-        border-color 180ms ease;
+  display: block;
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
 }
 
 .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 14px 28px rgba(28, 34, 48, 0.1);
-    border-color: var(--accent-violet);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(10, 17, 40, 0.08);
+  border-color: var(--accent-yellow-dark);
 }
 
 .body {
-    padding: 1.4rem 1.5rem 1.5rem;
+  padding: 1.6rem;
 }
 
 .tag {
-    display: inline-block;
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--accent-violet);
-    margin-bottom: 0.65rem;
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--navy-primary);
+  margin-bottom: 0.75rem;
 }
 
 .title {
-    font-size: 1.25rem;
-    margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem;
+  color: var(--ink);
 }
 
 .description {
-    font-size: 0.92rem;
-    line-height: 1.7;
-    color: var(--ink-soft);
-    margin: 0 0 1.25rem;
-    max-width: 680px;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--ink-soft);
+  margin: 0 0 1.5rem;
+  max-width: 680px;
 }
 
 .links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin-bottom: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
 }
 
+/* Secondary Link (Documentation) */
 .link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
 
-    font-family: var(--font-mono);
-    font-size: 0.78rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
 
-    color: var(--ink);
-    text-decoration: none;
+  color: var(--ink);
+  text-decoration: none;
 
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    padding: 0.4rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
 
-    transition:
-        color 160ms ease,
-        border-color 160ms ease,
-        background 160ms ease;
+  transition:
+    color 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease;
 }
 
 .link:hover {
-    color: var(--accent-violet);
-    border-color: var(--accent-violet);
-    background: var(--accent-violet-soft);
+  color: var(--navy-primary);
+  border-color: var(--navy-primary);
+  background: var(--accent-violet-soft);
 }
 
-.link span {
-    font-size: 0.9rem;
+/* Primary Link (Prototype - เด่นกว่า) */
+.primaryLink {
+  background: var(--accent-yellow);
+  border-color: var(--accent-yellow);
+  color: var(--ink);
+  font-weight: 600;
 }
 
-.link small {
-    color: var(--ink-faint);
-    font-size: 0.65rem;
+.primaryLink:hover {
+  background: #eab308; /* เหลืองเข้มขึ้นเล็กน้อย */
+  border-color: #eab308;
+  color: var(--ink);
 }
 
-.disabled {
-    color: var(--ink-faint);
-    cursor: default;
+.linkIcon {
+  font-size: 0.85rem;
+  transition: transform 160ms ease;
 }
 
-.disabled:hover {
-    color: var(--ink-faint);
-    border-color: var(--line);
-    background: transparent;
-}
-
-.tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.tags li {
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    color: var(--ink-soft);
-
-    border: 1px solid var(--line);
-    border-radius: 999px;
-
-    padding: 0.15rem 0.6rem;
+.link:hover .linkIcon {
+  transform: translate(2px, -2px); /* เอฟเฟกต์ลูกศรขยับเมื่อ Hover */
 }
