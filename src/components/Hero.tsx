@@ -1,4 +1,3 @@
-import { profile } from "@/data/profile";
 import styles from "./Hero.module.css";
 
 export function Hero() {
