@@ -2,31 +2,29 @@
   padding: clamp(2rem, 5vw, 4rem) 0;
 }
 
-/* ใช้ CSS Grid แบ่งคอลัมน์ Sidebar (ซ้าย) และ Content (ขวา) */
 .layout {
   display: grid;
-  grid-template-columns: 180px 1fr;
-  /* ฝั่งซ้ายกว้าง 240px ฝั่งขวาขยายเต็มที่ */
+  grid-template-columns: 180px minmax(0, 1fr);
   gap: 3rem;
   align-items: start;
-  /* จำเป็นมากสำหรับ position: sticky */
 }
 
 .sidebar {
   position: sticky;
   top: 2rem;
-  /* เว้นระยะห่างจากขอบบน หรือปรับตามความสูง Header */
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 1rem 0;
 }
 
-/* ปรับปรุงเมื่อดูบนมือถือ (สลับกลับมาไว้ข้างบน) */
-@media (max-width: 440px) {
+.content {
+  min-width: 0;
+}
+
+@media (max-width: 780px) {
   .layout {
     grid-template-columns: 1fr;
-    /* เหลือคอลัมน์เดียว */
     gap: 1.5rem;
   }
 
@@ -35,6 +33,11 @@
     top: 1.42rem;
     z-index: 10;
     background: var(--paper);
-    /* ป้องกันเนื้อหาทะลุขึ้นมา */
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
   }
 }

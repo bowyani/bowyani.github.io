@@ -7,16 +7,16 @@ import { ProjectJAS } from "@/pages/Project-JAS";
 
 function App() {
   return (
-    <MainLayout>
-      <HashRouter>
+    <HashRouter>
+      <MainLayout>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/pm" element={<ProjectPM />} />
           <Route path="/rpo" element={<ProjectRPO />} />
           <Route path="/jas" element={<ProjectJAS />} />
         </Routes>
-      </HashRouter>
-    </MainLayout>
+      </MainLayout>
+    </HashRouter>
   );
 }
 
