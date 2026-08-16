@@ -23,7 +23,7 @@
 }
 
 /* ปรับปรุงเมื่อดูบนมือถือ (สลับกลับมาไว้ข้างบน) */
-@media (max-width: 868px) {
+@media (max-width: 440px) {
   .layout {
     grid-template-columns: 1fr;
     /* เหลือคอลัมน์เดียว */
