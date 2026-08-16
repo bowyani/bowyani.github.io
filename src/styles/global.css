@@ -1,4 +1,4 @@
-@import './tokens.css';
+@import "./tokens.css";
 
 * {
   box-sizing: border-box;
@@ -12,7 +12,9 @@ html {
   html {
     scroll-behavior: auto;
   }
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -30,7 +32,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-display);
   font-weight: 600;
   line-height: 1.1;
@@ -65,7 +70,7 @@ button {
 }
 
 .container {
-  max-width: var(--maxw);
+  width: min(100% - 2rem, 1200px);
   margin: 0 auto;
   padding: 0 var(--gutter);
 }
