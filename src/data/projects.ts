@@ -2,6 +2,26 @@ import type { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    id: "usecase-01",
+    discipline: "usecase",
+    title: "Price Optimization by ML",
+    description: "Forecasted 500M THB in procurement savings",
+    image: "/projects/project_RPO_2.png",
+    link: "https://bowyani.github.io/#/rpo",
+    tags: ["BA"],
+    date: "2025 - 2026",
+  },
+  {
+    id: "usecase-02",
+    discipline: "usecase",
+    title: "Job Acceptance System",
+    description: "Outsource Maintenance & SLA Management Platform",
+    image: "/projects/project_JAS.png",
+    link: "https://bowyani.github.io/#/jas",
+    tags: ["BA"],
+    date: "2024 - 2025",
+  },
+  {
     id: "product-02",
     discipline: "product",
     title: "Preventive Maintenance Platform",

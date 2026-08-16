@@ -1,10 +1,10 @@
-export type Discipline = 'product' | 'coding' | 'research' | 'ui';
+export type Discipline = "usecase" | "product" | "coding" | "research" | "ui";
 
 export interface DisciplineMeta {
   id: Discipline;
   label: string;
   tagline: string;
-  accentVar: '--accent-violet' | '--accent-coral' | '--accent-moss';
+  accentVar: "--accent-violet" | "--accent-coral" | "--accent-moss";
 }
 
 export interface Project {
