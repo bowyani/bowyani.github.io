@@ -18,7 +18,7 @@ export const profile: Profile = {
 export const disciplines: DisciplineMeta[] = [
   {
     id: "usecase",
-    label: "Usecase Org.",
+    label: "Usecase",
     tagline: " ",
     accentVar: "--accent-violet",
   },
