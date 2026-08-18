@@ -2,9 +2,6 @@ import type { Profile, DisciplineMeta } from "@/types";
 
 export const profile: Profile = {
   name: "Yanisa Verawongchai",
-  role: "Coding · UX Research · UI Design",
-  bio: "Join me on my journey of building products !",
-  avatar: "/profile.jpg",
   resumeUrl: "/resume.pdf",
   socials: [
     {
@@ -12,6 +9,7 @@ export const profile: Profile = {
       url: "https://www.linkedin.com/in/yanisa-verawongchai/",
     },
     { label: "YouTube", url: "https://www.youtube.com/@yanisav/playlists" },
+    { label: "GitHub", url: "https://github.com/bowyani" },
   ],
 };
 

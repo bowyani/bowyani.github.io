@@ -25,9 +25,6 @@ export interface SocialLink {
 
 export interface Profile {
   name: string;
-  role: string;
-  bio: string;
-  avatar: string;
   resumeUrl: string;
   socials: SocialLink[];
 }

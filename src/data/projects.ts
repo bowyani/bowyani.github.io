@@ -2,6 +2,17 @@ import type { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    id: "coding-01",
+    discipline: "coding",
+    title: "Recruitment Platform",
+    description:
+      "Replaced manual Google Forms process with a web-based recruitment platform, streamlining the application process including candidate evaluation and improving efficiency.",
+    image: "/projects/coding_recruit.png",
+    link: "https://youtu.be/6lBHCo0Hiqc?si=VO0NDGEmNPs5cOvp",
+    tags: ["Web App", "React", "Node.js/Express", "PostgreSQL"],
+    date: "Apr 2026",
+  },
+  {
     id: "usecase-01",
     discipline: "usecase",
     title: "Price Optimization by ML",
@@ -50,17 +61,6 @@ export const projects: Project[] = [
     link: "https://youtu.be/HEENBvmxnuc?si=3F3fxRCNDDLjqt6n",
     tags: ["AI tool"],
     date: "Jul 2026",
-  },
-  {
-    id: "coding-01",
-    discipline: "coding",
-    title: "Recruitment Platform",
-    description:
-      "Replaced manual Google Forms process with a web-based recruitment platform, streamlining the application process including candidate evaluation and improving efficiency.",
-    image: "/projects/coding_recruit.png",
-    link: "https://youtu.be/6lBHCo0Hiqc?si=VO0NDGEmNPs5cOvp",
-    tags: ["Web App", "React", "Node.js/Express", "PostgreSQL"],
-    date: "Apr 2026",
   },
   {
     id: "coding-02",
