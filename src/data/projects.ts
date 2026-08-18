@@ -2,6 +2,36 @@ import type { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    id: "product-02",
+    discipline: "product",
+    title: "Preventive Maintenance Platform",
+    description: "Preventive Maintenance Platform",
+    image: "/projects/product_PM.png",
+    link: "https://bowyani.github.io/#/pm",
+    tags: [
+      "Product Builder",
+      "AI tool",
+      "As-Is Analysis",
+      "To-Be Analysis",
+      "BRD",
+      "ERD",
+      "User story",
+      "FRS",
+    ],
+    date: "Jul 2026 (Ongoing)",
+  },
+  {
+    id: "product-01",
+    discipline: "product",
+    title: "AI tool for Business Analyst",
+    description:
+      "Integrated AI tool to assist Business Analysts in generating As-Is and To-Be analysis, as well as creating BRD, ERD, User Stories, and FRS documents.",
+    image: "/projects/product_AI.png",
+    link: "https://youtu.be/HEENBvmxnuc?si=3F3fxRCNDDLjqt6n",
+    tags: ["AI tool"],
+    date: "Jul 2026",
+  },
+  {
     id: "coding-01",
     discipline: "coding",
     title: "Recruitment Platform",
@@ -31,36 +61,6 @@ export const projects: Project[] = [
     link: "https://bowyani.github.io/#/jas",
     tags: ["BA"],
     date: "2024 - 2025",
-  },
-  {
-    id: "product-02",
-    discipline: "product",
-    title: "Preventive Maintenance Platform",
-    description: "Preventive Maintenance Platform",
-    image: "/projects/product_PM.png",
-    link: "https://bowyani.github.io/#/pm",
-    tags: [
-      "Product Builder",
-      "AI tool",
-      "As-Is Analysis",
-      "To-Be Analysis",
-      "BRD",
-      "ERD",
-      "User story",
-      "FRS",
-    ],
-    date: "Jul 2026 (Ongoing)",
-  },
-  {
-    id: "product-01",
-    discipline: "product",
-    title: "AI tool for Business Analyst",
-    description:
-      "Integrated AI tool to assist Business Analysts in generating As-Is and To-Be analysis, as well as creating BRD, ERD, User Stories, and FRS documents.",
-    image: "/projects/product_AI.png",
-    link: "https://youtu.be/HEENBvmxnuc?si=3F3fxRCNDDLjqt6n",
-    tags: ["AI tool"],
-    date: "Jul 2026",
   },
   {
     id: "coding-02",
