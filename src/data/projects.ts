@@ -2,6 +2,24 @@ import type { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    id: "product-03",
+    discipline: "product",
+    title: "Production Monitoring",
+    description: "Prototype in Automation Factory (via MQTT)",
+    image: "/projects/product_factory.png",
+    link: "https://github.com/bowyani/Production_Monitoring",
+    tags: [
+      "Product Builder",
+      "AI tool",
+      "As-Is Analysis",
+      "To-Be Analysis",
+      "Prototype",
+      "Gap analyst",
+      "IT/OT",
+    ],
+    date: "Aug 2026",
+  },
+  {
     id: "product-02",
     discipline: "product",
     title: "Preventive Maintenance Platform",
