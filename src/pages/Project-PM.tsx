@@ -5,8 +5,8 @@ export function ProjectPM() {
     <section id="work" className={`container ${styles.work}`}>
       <article className={styles.card}>
         <div className={styles.body}>
-          <h3 className={styles.title}>Preventive Maintenance</h3>
-          <p className={styles.description}>
+          <h1 className={styles.title}>Preventive Maintenance</h1>
+          <p className={styles.description} lang="th">
             ระบบสำหรับวางแผน ติดตาม และจัดการงาน Preventive Maintenance
             เพื่อช่วยลด downtime และทำให้การบำรุงรักษาเป็นระบบมากขึ้น
           </p>

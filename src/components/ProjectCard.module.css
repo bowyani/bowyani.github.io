@@ -53,6 +53,13 @@
   margin-bottom: 0.7rem;
 }
 
+.date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  margin: 0 0 0.7rem;
+}
+
 .tags {
   list-style: none;
   display: flex;

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { profile } from "@/data/profile";
 import styles from "./Header.module.css";
 
@@ -5,10 +6,10 @@ export function Header() {
   return (
     <header className={styles.header}>
       <div className={`container ${styles.inner}`}>
-        <nav className={styles.nav}>
-          <a href="/">Home</a>
+        <nav className={styles.nav} aria-label="Primary">
+          <Link to="/">Home</Link>
         </nav>
-        <nav className={styles.nav}>
+        <nav className={styles.nav} aria-label="Resume and social links">
           <a href={profile.resumeUrl} download>
             Resume
           </a>

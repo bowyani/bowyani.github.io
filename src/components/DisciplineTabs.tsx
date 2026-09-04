@@ -11,12 +11,12 @@ export function DisciplineTabs({ active, onChange }: Props) {
   return (
     <div
       className={styles.tabs}
-      role="tablist"
-      aria-label="Filter by discipline"
+      role="group"
+      aria-label="Filter projects by discipline"
     >
       <button
-        role="tab"
-        aria-selected={active === "all"}
+        type="button"
+        aria-pressed={active === "all"}
         className={`${styles.tab} ${active === "all" ? styles.active : ""}`}
         style={{
           ["--accent" as string]:
@@ -30,8 +30,8 @@ export function DisciplineTabs({ active, onChange }: Props) {
       {disciplines.map((d) => (
         <button
           key={d.id}
-          role="tab"
-          aria-selected={active === d.id}
+          type="button"
+          aria-pressed={active === d.id}
           className={`${styles.tab} ${active === d.id ? styles.active : ""}`}
           style={{
             ["--accent" as string]: `var(${d.accentVar})`,

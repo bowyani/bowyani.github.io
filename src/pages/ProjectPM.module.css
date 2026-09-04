@@ -38,6 +38,17 @@
   transition: transform 300ms ease;
 }
 
+/* standalone screenshots that are NOT inside .previewContainer
+   (RPO / JAS pages) — keep natural ratio, don't collapse */
+.standaloneImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
 /* Hover Overlay เอฟเฟกต์รูปพรีวิว */
 .overlay {
   position: absolute;

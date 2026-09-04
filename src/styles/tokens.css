@@ -13,6 +13,11 @@
   --accent-moss: #4c7a5e;     /* rare use — UX/research tag */
   --accent-moss-soft: #e3ede6;
 
+  /* aliases used by the case-study pages (ProjectPM.module.css) */
+  --navy-primary: var(--accent-violet);
+  --accent-yellow: var(--accent-coral);
+  --accent-yellow-dark: #c8901f;
+
   /* --- Type --- */
   --font-display: 'Fraunces', Georgia, serif;
   --font-body: 'Space Grotesk', 'Segoe UI', sans-serif;

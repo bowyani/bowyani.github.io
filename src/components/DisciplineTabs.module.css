@@ -115,6 +115,19 @@
     /* บนมือถือให้ไถข้างได้ ไม่แตกเป็นหลายบรรทัด */
     overflow-x: auto;
     /* สไลด์แนวนอนได้บนหน้าจอแคบ */
+    min-width: 0;
+    max-width: 100%;
+    /* จางขอบขวาเพื่อบอกใบ้ว่ายังมีแท็บถัดไปให้ไถดู */
+    -webkit-mask-image: linear-gradient(
+      to right,
+      #000 calc(100% - 28px),
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      #000 calc(100% - 28px),
+      transparent
+    );
   }
 
   .tab {
