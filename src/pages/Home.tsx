@@ -12,7 +12,11 @@ export function Home() {
   return (
     <>
       <Hero />
-      <section id="work" className={`container ${styles.work}`}>
+      <section
+        id="work"
+        aria-label="Selected work"
+        className={`container ${styles.work}`}
+      >
         <div className={styles.layout}>
           {/* คอลัมน์ซ้าย: Sticky Sidebar Filter */}
           <aside className={styles.sidebar}>
@@ -20,9 +24,9 @@ export function Home() {
           </aside>
 
           {/* คอลัมน์ขวา: รายการผลงาน */}
-          <main className={styles.content}>
+          <div className={styles.content}>
             <ProjectGrid projects={projects} filter={filter} />
-          </main>
+          </div>
         </div>
       </section>
     </>

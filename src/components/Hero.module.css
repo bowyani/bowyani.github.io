@@ -36,6 +36,8 @@
 .bio {
   font-size: 1.15rem;
   max-width: 46ch;
+  color: var(--paper);
+  opacity: 0.92;
 }
 
 .actions {
@@ -58,25 +60,27 @@
 }
 
 .primaryBtn:hover {
-  background: var(--accent-violet);
+  background: #0b1220;
   transform: translateY(-2px);
 }
 
 .secondaryBtn {
-  border: 1.5px solid var(--line);
+  border: 1.5px solid color-mix(in srgb, var(--paper) 45%, transparent);
   padding: 0.72rem 1.3rem;
   border-radius: 999px;
   font-weight: 600;
   font-size: 0.95rem;
-  color: var(--ink-soft);
+  color: var(--paper);
   transition:
     border-color 150ms ease,
-    color 150ms ease;
+    color 150ms ease,
+    background 150ms ease;
 }
 
 .secondaryBtn:hover {
-  border-color: var(--accent-violet);
-  color: var(--accent-violet);
+  border-color: var(--paper);
+  background: var(--paper);
+  color: var(--ink);
 }
 
 .avatarWrap {

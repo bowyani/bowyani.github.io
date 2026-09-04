@@ -18,7 +18,7 @@
 .copy {
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  color: var(--ink-faint);
+  color: var(--ink-soft);
   margin: 0;
 }
 
