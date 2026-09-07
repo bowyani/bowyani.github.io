@@ -1,0 +1,49 @@
+.wrap {
+  margin-top: 2.5rem;
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--ink);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.action {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent-violet);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.action:hover {
+  border-bottom-color: currentColor;
+}
+
+.frame {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
+@media (max-width: 640px) {
+  .frame {
+    aspect-ratio: 4 / 5;
+  }
+}
