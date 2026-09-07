@@ -7,7 +7,7 @@ export const projects: Project[] = [
     title: "Production Monitoring",
     description: "Prototype in Automation Factory (via MQTT)",
     image: "/projects/product_factory.png",
-    link: "https://github.com/bowyani/Production_Monitoring",
+    link: "https://bowyani.github.io/#/production-monitoring",
     tags: [
       "Product Builder",
       "AI tool",
