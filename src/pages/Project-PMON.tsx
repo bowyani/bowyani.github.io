@@ -1,4 +1,6 @@
 import styles from "./ProjectPM.module.css";
+import { PdfViewer } from "@/components/PdfViewer";
+import { GithubReadme } from "@/components/GithubReadme";
 
 export function ProjectPMON() {
   return (
@@ -49,6 +51,13 @@ export function ProjectPMON() {
           </div>
         </a>
       </article>
+
+      <PdfViewer
+        src="/projects/production-monitoring/Presentation.pdf"
+        title="Production Monitoring — Presentation"
+      />
+
+      <GithubReadme repo="bowyani/Production_Monitoring" clampHeight={560} />
     </section>
   );
 }
