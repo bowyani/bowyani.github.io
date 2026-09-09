@@ -5,15 +5,16 @@ export function ProjectJAS() {
     <section id="work" className={`container ${styles.work}`}>
       <article className={styles.card}>
         <div className={styles.body}>
-          <h3 className={styles.title}>Job Acceptance System</h3>
+          <h1 className={styles.title}>Job Acceptance System</h1>
           <p className={styles.description}>
-            Outsource Maintenance & SLA Management Platform - Corporate Digital
+            Outsource Maintenance &amp; SLA Management Platform - Corporate Digital
             Transformation KPI
           </p>
           <img
             src="/projects/project_JAS.png"
-            alt="Outsource Maintenance & SLA Management Platform Preview"
-            className={styles.previewImg}
+            alt="Outsource Maintenance & SLA Management Platform preview"
+            className={styles.standaloneImg}
+            loading="lazy"
           />
         </div>
       </article>

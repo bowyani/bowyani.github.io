@@ -15,7 +15,7 @@ export function ProjectCard({ project }: { project: Project }) {
         <span className={styles.tag} style={{ ['--accent' as string]: `var(${meta?.accentVar})` }}>
           {meta?.label}
         </span>
-        <h3 className={styles.title}>{project.title}</h3>
+        <h2 className={styles.title}>{project.title}</h2>
         <p className={styles.desc}>{project.description}</p>
         {project.date && (
           <p className={styles.date}>{project.date}</p>
