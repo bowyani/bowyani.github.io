@@ -8,7 +8,7 @@ export function ProjectPVM() {
       <ProjectHero
         eyebrow="Product Building · Maintenance Ops"
         title="Preventive Maintenance"
-        image="/projects/product_PM.png"
+        image="/projects/product_PVM.png"
         description={
           <p>
             A Preventive Maintenance (PM) platform designed for site supervisors

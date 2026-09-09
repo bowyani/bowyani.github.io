@@ -15,10 +15,6 @@ export function ProjectPMON() {
             Real-time production tracking system for automated factories. It
             ingests machine data via MQTT to display operational status and
             output metrics, while triggering real-time alerts when issues arise.
-            I built a prototype demo and documented the design rationale in 4
-            days, taking a holistic approach across BA, Engineering, and
-            Developer perspectives. While it isn't fully polished—and won't be
-            until it's deployed for real user feedback—feel free to explore it.
             This project serves as a proof of concept, keeping Industry 4.0 core
             principles and IT/OT integration at its center.
           </p>
