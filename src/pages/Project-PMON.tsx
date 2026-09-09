@@ -1,14 +1,17 @@
 import styles from "./Project.module.css";
-import { PdfViewer } from "@/components/PdfViewer";
+import { ProjectHero } from "@/components/ProjectHero";
 import { GithubReadme } from "@/components/GithubReadme";
+import { PdfViewer } from "@/components/PdfViewer";
 
 export function ProjectPMON() {
   return (
-    <section id="work" className={`container ${styles.work}`}>
-      <article className={styles.card}>
-        <div className={styles.body}>
-          <h1 className={styles.title}>Production Monitoring</h1>
-          <p className={styles.description} lang="en">
+    <>
+      <ProjectHero
+        eyebrow="Product Building · Industry 4.0"
+        title="Production Monitoring"
+        image="/projects/product_factory.jpg"
+        description={
+          <p>
             Real-time production tracking system for automated factories. It
             ingests machine data via MQTT to display operational status and
             output metrics, while triggering real-time alerts when issues arise.
@@ -19,52 +22,47 @@ export function ProjectPMON() {
             This project serves as a proof of concept, keeping Industry 4.0 core
             principles and IT/OT integration at its center.
           </p>
+        }
+      />
 
-          <div className={styles.links}>
+      <section id="work" className={`container ${styles.work}`}>
+        <div className={styles.layout}>
+          <aside className={styles.sidebar}>
+            <p className={styles.railLabel}>Explore</p>
             <a
-              className={`${styles.link}`}
+              className={styles.primaryLink}
               href="https://production-monitoring-demo.onrender.com/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="View Prototype (opens in new tab)"
+              aria-label="Open the prototype (opens in new tab)"
             >
-              Prototype
+              Open Prototype ↗
             </a>
             <a
-              className={styles.link}
+              className={styles.sideLink}
               href="https://github.com/bowyani/Production_Monitoring"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="View Documentation on GitHub (opens in new tab)"
+              aria-label="View documentation on GitHub (opens in new tab)"
             >
-              Documentation
+              Documentation ↗
             </a>
+          </aside>
+
+          <div className={styles.content}>
+            <GithubReadme
+              repo="bowyani/Production_Monitoring"
+              heading="Project write-up"
+              clampHeight={0}
+            />
+
+            <PdfViewer
+              src="/projects/production-monitoring/Presentation.pdf"
+              title="Production Monitoring — Presentation"
+            />
           </div>
         </div>
-        <a
-          href="https://production-monitoring-demo.onrender.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.previewContainer}
-          aria-label="View Prototype (opens in new tab)"
-        >
-          <img
-            src="/projects/product_factory.png"
-            alt="Production Monitoring Prototype Preview"
-            className={styles.previewImg}
-          />
-          <div className={styles.overlay}>
-            <span>View Prototype</span>
-          </div>
-        </a>
-      </article>
-
-      <GithubReadme repo="bowyani/Production_Monitoring" clampHeight={560} />
-
-      <PdfViewer
-        src="/projects/production-monitoring/Presentation.pdf"
-        title="Production Monitoring — Presentation"
-      />
-    </section>
+      </section>
+    </>
   );
 }
