@@ -1,14 +1,22 @@
 import styles from "./ProjectPM.module.css";
+import { GithubReadme } from "@/components/GithubReadme";
 
-export function ProjectPM() {
+export function ProjectPVM() {
   return (
     <section id="work" className={`container ${styles.work}`}>
       <article className={styles.card}>
         <div className={styles.body}>
           <h1 className={styles.title}>Preventive Maintenance</h1>
-          <p className={styles.description} lang="th">
-            ระบบสำหรับวางแผน ติดตาม และจัดการงาน Preventive Maintenance
-            เพื่อช่วยลด downtime และทำให้การบำรุงรักษาเป็นระบบมากขึ้น
+          <p className={styles.description} lang="en">
+            A Preventive Maintenance (PM) platform designed for site supervisors
+            and field technicians. It streamlines maintenance workflows, tracks
+            task completion via custom checksheets, and connects directly with
+            operational data (like{"Production Monitoring"}
+            <a href="/production-monitoring" className={styles.linkInline}>
+              Production Monitoring
+            </a>
+            ) to analyze equipment lifecycles, maintenance costs, and machine
+            replacement ROI.
           </p>
 
           <div className={styles.links}>
@@ -49,6 +57,7 @@ export function ProjectPM() {
           </div>
         </a>
       </article>
+      <GithubReadme repo="bowyani/preventive-maintenance" clampHeight={560} />
     </section>
   );
 }

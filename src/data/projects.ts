@@ -5,7 +5,8 @@ export const projects: Project[] = [
     id: "product-03",
     discipline: "product",
     title: "Production Monitoring",
-    description: "Prototype in Automation Factory (via MQTT)",
+    description:
+      "Industry 4.0 core principles and IT/OT integration at its center. Ingests machine data via MQTT to provide real-time production tracking for automated factories.",
     image: "/projects/product_factory.png",
     link: "https://bowyani.github.io/#/production-monitoring",
     tags: [
@@ -23,9 +24,10 @@ export const projects: Project[] = [
     id: "product-02",
     discipline: "product",
     title: "Preventive Maintenance Platform",
-    description: "Preventive Maintenance Platform",
-    image: "/projects/product_PM.png",
-    link: "https://bowyani.github.io/#/pm",
+    description:
+      "Plan, track, and create custom checksheets for technicians managing Preventive Maintenance tasks.",
+    image: "/projects/product_PVM.png",
+    link: "https://bowyani.github.io/#/preventive-maintenance",
     tags: [
       "Product Builder",
       "AI tool",
