@@ -30,12 +30,16 @@ export function ProjectHero({
         />
       )}
       <div className={`container ${styles.inner}`}>
-        {eyebrow && <p className={styles.eyebrow}>{eyebrow}</p>}
-        <h1 className={styles.title}>{title}</h1>
-        <div className={styles.description} lang="en">
-          {description}
+        <div className={styles.headCol}>
+          {eyebrow && <p className={styles.eyebrow}>{eyebrow}</p>}
+          <h1 className={styles.title}>{title}</h1>
         </div>
-        {actions && <div className={styles.actions}>{actions}</div>}
+        <div className={styles.bodyCol}>
+          <div className={styles.description} lang="en">
+            {description}
+          </div>
+          {actions && <div className={styles.actions}>{actions}</div>}
+        </div>
       </div>
     </section>
   );
