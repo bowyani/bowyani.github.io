@@ -8,9 +8,16 @@ export function ProjectPMON() {
       <article className={styles.card}>
         <div className={styles.body}>
           <h1 className={styles.title}>Production Monitoring</h1>
-          <p className={styles.description} lang="th">
-            ระบบติดตามสายการผลิตแบบเรียลไทม์ในโรงงานอัตโนมัติ รับข้อมูลจากเครื่องจักร
-            ผ่าน MQTT เพื่อแสดงสถานะการทำงาน ปริมาณการผลิต และแจ้งเตือนเมื่อเกิดปัญหา
+          <p className={styles.description} lang="en">
+            Real-time production tracking system for automated factories. It
+            ingests machine data via MQTT to display operational status and
+            output metrics, while triggering real-time alerts when issues arise.
+            I built a prototype demo and documented the design rationale in 4
+            days, taking a holistic approach across BA, Engineering, and
+            Developer perspectives. While it isn't fully polished—and won't be
+            until it's deployed for real user feedback—feel free to explore it.
+            This project serves as a proof of concept, keeping Industry 4.0 core
+            principles and IT/OT integration at its center.
           </p>
 
           <div className={styles.links}>
@@ -52,12 +59,12 @@ export function ProjectPMON() {
         </a>
       </article>
 
+      <GithubReadme repo="bowyani/Production_Monitoring" clampHeight={560} />
+
       <PdfViewer
         src="/projects/production-monitoring/Presentation.pdf"
         title="Production Monitoring — Presentation"
       />
-
-      <GithubReadme repo="bowyani/Production_Monitoring" clampHeight={560} />
     </section>
   );
 }
