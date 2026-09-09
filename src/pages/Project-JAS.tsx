@@ -1,4 +1,4 @@
-import styles from "./ProjectPM.module.css";
+import styles from "./Project.module.css";
 
 export function ProjectJAS() {
   return (
@@ -7,8 +7,8 @@ export function ProjectJAS() {
         <div className={styles.body}>
           <h1 className={styles.title}>Job Acceptance System</h1>
           <p className={styles.description}>
-            Outsource Maintenance &amp; SLA Management Platform - Corporate Digital
-            Transformation KPI
+            Outsource Maintenance &amp; SLA Management Platform - Corporate
+            Digital Transformation KPI
           </p>
           <img
             src="/projects/project_JAS.png"

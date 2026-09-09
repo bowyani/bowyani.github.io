@@ -1,4 +1,4 @@
-import styles from "./ProjectPM.module.css";
+import styles from "./Project.module.css";
 
 export function ProjectRPO() {
   return (

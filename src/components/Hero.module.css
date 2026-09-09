@@ -35,7 +35,6 @@
 
 .bio {
   font-size: 1.15rem;
-  max-width: 46ch;
   color: var(--paper);
   opacity: 0.92;
 }
